@@ -19,11 +19,11 @@
     <!--NAV BAR-->
     <nav id="navbar">
         <ul id="navs">
-            <li class="hide delay1" id="fast"><a href="#">HOME</a></li>
-            <li class="hide delay2" id="fast"><a href="#">BIO</a></li>
-            <li class="hide delay3" id="fast"><a href="#">PROJECTS</a></li>
-            <li class="hide delay4" id="fast"><a href="#">CONTACT</a></li>
-            <li class="hide delay5" id="fast"><a href="#">SERVICES</a></li>
+            <li class="hide delay1 tab is-active" id="fast"><a data-switcher data-tab='1' href="#">HOME</a></li>
+            <li class="hide delay2 tab" id="fast"><a data-switcher data-tab='2' href="#">BIO</a></li>
+            <li class="hide delay3 tab" id="fast"><a data-switcher data-tab='3' href="#">PROJECTS</a></li>
+            <li class="hide delay4 tab" id="fast"><a data-switcher data-tab='4' href="#">CONTACT</a></li>
+            <li class="hide delay5 tab" id="fast"><a data-switcher data-tab='5' href="#">SERVICES</a></li>
         </ul>
     </nav>
 
@@ -33,8 +33,8 @@
         <source src="./assets/Images_Videos/Cotton_Candy_Nebula_4K_Motion_Background (1).mp4" type="video/mp4">
     </video>
 
+    <!--HEADER-->
     <header id="centerAll">
-        <!--HEADER-->
         <section class="container-fluid h-100 d-flex justify-content-center home">
             <div class="d-flex h-100 text-center align-items-center main">
                 <div class="w-100">
@@ -46,6 +46,23 @@
         </section>
     </header>
 
+    <!--PAGES-->
+    <main>
+        <section class="pages">
+            <div class="page" data-page="1"></div>
+            <h2>BIO</h2>
+            <p>bio info</p>
+            <div class="page" data-page="2"></div>
+            <h2>PROJECTS</h2>
+            <p>cards</p>
+            <div class="page" data-page="3"></div>
+            <h2>CONTACT</h2>
+            <p>contact info</p>
+            <div class="page" data-page="4"></div>
+            <h2>SERVICES</h2>
+            <p>Links to other pages</p>
+        </section>
+    </main>
 
     <!--JS links-->
     <script src="assets\index.js"></script>
