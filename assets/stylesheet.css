@@ -1,14 +1,14 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
-/*color palette*/
---maincolor: #241c4a;
---secondary: #f15a22;
---tertiary: white;
---bloop: #00aeef;
---floop: #9e5aa4;
+  padding: 0;
+  box-sizing: border-box;
+  
+  /*color palette*/
+  --maincolor: #241c4a;
+  --secondary: #f15a22;
+  --tertiary: white;
+  --bloop: #00aeef;
+  --floop: #9e5aa4;
+  margin: 0;
 }
 
 /*Background Video*/
@@ -24,22 +24,14 @@ box-sizing: border-box;
   }
 
 /* NAV */
-.navbar{
-display: flex;
-justify-content: center;
-align-items: center;
-position: sticky;
-top: 0;
-}
-
-.navbar ul{
+#navbar ul{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin: 20px 0px;
 }
 
-.navbar ul li{
+#navbar ul li{
   font-family:'Rock Salt', cursive;
   font-weight: 400;
   font-size: 20px;
@@ -52,7 +44,7 @@ top: 0;
   transition: all .5s ease;
 }
 
-.navbar ul li:hover{
+#navbar ul li:hover{
   color: white;
   background-color: var(--bloop);
   border-width: 5px;
@@ -62,6 +54,40 @@ top: 0;
   box-shadow: 0 0 10 var(--maincolor);
 }
 
+/* hide the nav links until clicked */
+.hide{
+  display: none;
+}
+
+.transformed{
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  transform: rotate(270deg);
+  background-color: var(--bloop);
+  transition-delay: 1s 250ms;
+  transition-property: margin-right color display flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 3s;
+  display: flex;
+}
+  
+#delay1{
+  transition-delay: .5s;
+}
+#delay2{
+  transition-delay: .8s;
+}
+#delay3{
+  transition-delay: 1.1s;
+}
+#delay4{
+  transition-delay: 1.4s;
+}
+#delay5{
+  transition-delay: 1.7s;
+}
 
 /* Main */
 #centerAll{
@@ -74,7 +100,6 @@ top: 0;
   left: 50%;
   right: 50%;
 }
-
 
 #logo{
   display: flex;
@@ -101,11 +126,11 @@ top: 0;
 }
 
 #explore:hover{
-transform: scale(1.05);
-transition: all .8s ease-in-out;
-border-width: 5px;
-border-color: var(--floop);
-border-radius: 8px;
-text-transform: uppercase;
-box-shadow: 10 10 10 var(--tertiary);
+  transition: all .8s ease-in-out;
+  border-width: 5px;
+  border-color: var(--floop);
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 10 10 10 var(--tertiary);
+  transform: scale(1.05);
 }
