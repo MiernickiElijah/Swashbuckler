@@ -1,0 +1,86 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+/*color palette*/
+--maincolor: blue;
+--secondary: Red;
+--tertiary: white;
+--bloop: green;
+--floop: orange;
+}
+
+#vid{
+  object-fit: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .9;
+  }
+
+/* NAV */
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+position: sticky;
+top: 0;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li{
+  font-family:'Rock Salt', cursive;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#navs a{
+  text-decoration: none;
+  color: var(--floop);
+  padding: 8px 25px;
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+  background-color: var(--bloop);
+  color: var(--tertiary);
+  transform: scale(1.5);
+  box-shadow: 0 0 10 var(--bloop);
+}
+
+/* Main */
+#home{
+  display: flex;
+  flex-direction: column;
+}
+
+#nameHead{
+  font-family: 'Rock Salt', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  line-height: 1.8;
+  font-size: 3vw;
+  color: var(--bloop);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+}
+
+#middleName{
+  display: block;
+  font-size: 10vw;
+  letter-spacing: -1.3vw;
+}
