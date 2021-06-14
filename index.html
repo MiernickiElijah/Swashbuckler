@@ -25,19 +25,19 @@
         </ul>
     </nav>
 
-    <header>
-        <!--VIDEO BACKGROUND-->
-        <div class="overlay"></div>
-        <video id="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="./assets/Images_Videos/Cotton_Candy_Nebula_4K_Motion_Background (1).mp4" type="video/mp4">
-        </video>
+    <!--VIDEO BACKGROUND-->
+    <div class="overlay"></div>
+    <video id="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="./assets/Images_Videos/Cotton_Candy_Nebula_4K_Motion_Background (1).mp4" type="video/mp4">
+    </video>
+
+    <header id="centerAll">
         <!--HEADER-->
-        <section class="container h-100 home">
+        <section class="container-fluid h-100 d-flex justify-content-center home">
             <div class="d-flex h-100 text-center align-items-center main">
                 <div class="w-100">
-                    <img id="logo" class="display-3" src="./assets/Images_Videos/logo.png"></img>
-                    <!-- <h1 class="display-3" id="nameHead">Elijah Miernicki</h1> -->
-                    <p class="lead mb-0" id="explore">Click to Explore</p>
+                    <img id="logo" src="./assets/Images_Videos/logo.png"></img>
+                    <button type="button" class="btn" id="explore"><span>Explore</span></button>
                 </div>
             </div>
         </section>
