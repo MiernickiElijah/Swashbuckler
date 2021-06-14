@@ -71,7 +71,6 @@
   transition-delay: 1.7s;
 }
 
-
 /* NAV */
 #navbar ul{
   display: flex;
@@ -95,7 +94,7 @@
   border-width: 5px;
   border-radius: 8px;
   transform: scale(1.05);
-  box-shadow: 8px 8px 8px var(--secondary);
+  box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary), 0px 0px 80px var(--secondary);
 }
 
 /* Main */
@@ -119,6 +118,11 @@
 }
 
 /*Explore BTN */
+#explore{
+ min-height: 65px; 
+ min-width: 185px;
+}
+
 #explore span{
   display: flex;
   flex-wrap: wrap;
@@ -129,10 +133,11 @@
   border-width: 5px;
   border-color: var(--floop);
   border-radius: 8px;
-  font-size: .8vw;
+  font-size: 16px;
   letter-spacing: .35vw;
   font-weight: 900;
   padding: 15px;
+  -webkit-text-stroke: .18vw var(--maincolor);
 }
 
 #explore:hover{
@@ -140,6 +145,28 @@
   border-color: var(--floop);
   border-radius: 8px;
   text-transform: uppercase;
-  box-shadow: 10px 10px 10px var(--secondary);
+  box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary), 0px 0px 80px var(--secondary);
   transform: scale(1.05);
+}
+
+
+
+/*screen change */
+@media screen and (max-width:1024px){
+  #navbar{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  #navbar{
+    flex-direction: column;
+  }
+  #centerAll {
+    position: relative;
+    top: 200px;
+    left: 0%;
+    right: 50%
+  }
+  #
 }
