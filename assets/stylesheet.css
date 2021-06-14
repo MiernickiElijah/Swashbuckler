@@ -118,11 +118,6 @@
 }
 
 /*Explore BTN */
-#explore{
- min-height: 65px; 
- min-width: 185px;
-}
-
 #explore span{
   display: flex;
   flex-wrap: wrap;
@@ -149,9 +144,12 @@
   transform: scale(1.05);
 }
 
-
-
 /*screen change */
+#explore{
+  min-height: 65px; 
+  min-width: 185px;
+ }
+
 @media screen and (max-width:1024px){
   #navbar{
     width: 60%;
