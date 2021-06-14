@@ -33,6 +33,8 @@
   font-family:'Rock Salt', cursive;
   font-weight: 400;
   font-size: 20px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .transformed{
@@ -49,6 +51,8 @@
   transition-timing-function: ease-in-out;
   transition-duration: 3s;
   display: flex;
+  padding: 5px;
+  margin: 5px;
 }
 
 .delay1{
@@ -83,15 +87,15 @@
   transition: all .5s ease;
 }
 
-a:hover{
-  color: white;
-  transition-delay: 200ms;
+#fast:hover{
   background-color: var(--tertiary);
+  transition-duration: 1s;
+  transition-delay: 0s;
   border: var(--floop);
   border-width: 5px;
   border-radius: 8px;
   transform: scale(1.05);
-  box-shadow: 15 15 15 var(--secondary);
+  box-shadow: 8px 8px 8px var(--secondary);
 }
 
 /* Main */
@@ -136,6 +140,6 @@ a:hover{
   border-color: var(--floop);
   border-radius: 8px;
   text-transform: uppercase;
-  box-shadow: 10 10 10 var(--tertiary);
+  box-shadow: 10px 10px 10px var(--secondary);
   transform: scale(1.05);
 }
