@@ -4,11 +4,11 @@ padding: 0;
 box-sizing: border-box;
 
 /*color palette*/
---maincolor: blue;
---secondary: Red;
+--maincolor: #241c4a;
+--secondary: #f15a22;
 --tertiary: white;
---bloop: green;
---floop: orange;
+--bloop: #00aeef;
+--floop: #9e5aa4;
 }
 
 #vid{
@@ -34,6 +34,7 @@ top: 0;
 
 .navbar ul{
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 20px 0px;
 }
@@ -59,28 +60,32 @@ top: 0;
 }
 
 /* Main */
-#home{
+img{
+  opacity: .90;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  top: 300px;
+  right: 50%;
+  left: 39%;
 }
 
-#nameHead{
+#explore{
   font-family: 'Rock Salt', cursive;
   text-transform: uppercase;
-  letter-spacing: 1vw;
-  line-height: 1.8;
-  font-size: 3vw;
-  color: var(--bloop);
+  color: var(--secondary);
+  display: block;
+  font-size: 1.5vw;
+  letter-spacing: .35vw;
+  font-weight: 800;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   position: relative;
-  top: 300px;
-}
-
-#middleName{
-  display: block;
-  font-size: 10vw;
-  letter-spacing: -1.3vw;
+  top: 300px; 
+  padding: 20px;
 }
