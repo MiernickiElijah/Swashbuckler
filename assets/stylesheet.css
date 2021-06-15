@@ -188,7 +188,7 @@ main section.pages div.page.active{
 #explore{
   min-height: 65px; 
   min-width: 185px;
- }
+}
 
 @media screen and (max-width:1024px){
   #navbar{
@@ -206,5 +206,4 @@ main section.pages div.page.active{
     left: 0%;
     right: 50%
   }
-  #
 }
