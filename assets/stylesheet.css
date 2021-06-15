@@ -67,6 +67,24 @@
   animation: type 3s steps(60, end); 
 }
 
+.stay{
+  visibility: visible;
+  background-color: var(--bloop);
+  border: var(--secondary);
+  font-family:'Rock Salt', cursive;
+  border-width: 5px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  width: 8rem;
+}
+
 @keyframes type{ 
   from { width: 0; } 
 } 
