@@ -166,7 +166,7 @@
 /* PAGES and Transitions */
 
 /* Select NAV on Page */
-body nav ul li.active a[data-switcher] {
+body nav ul li.active {
   background-color: var(--tertiary);
   border-width: 5px;
   border-color: var(--floop);
