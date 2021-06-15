@@ -1,14 +1,13 @@
 *{
   padding: 0;
   box-sizing: border-box;
-  
+  margin: 0;
   /*color palette*/
   --maincolor: #241c4a;
   --secondary: #f15a22;
   --tertiary: white;
   --bloop: #00aeef;
   --floop: #9e5aa4;
-  margin: 0;
 }
 
 /*Background Video*/
@@ -95,6 +94,7 @@
   border-radius: 8px;
   transform: scale(1.05);
   box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary), 0px 0px 80px var(--secondary);
+  cursor: pointer;
 }
 
 /* Main */
@@ -142,9 +142,31 @@
   text-transform: uppercase;
   box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary), 0px 0px 80px var(--secondary);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
-/*screen change */
+/* PAGES and Transitions */
+
+/* Select NAV on Page */
+body nav ul li.active a[data-switcher] {
+  background-color: var(--tertiary);
+  border-width: 5px;
+  border-color: var(--floop);
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 10px var(--secondary), 0px 0px 40px var(--secondary), 0px 0px 80px var(--secondary);
+  transform: scale(1.05);
+}
+
+main section.pages div.page{
+  display: none;
+}
+
+main section.pages div.page.active{
+  display: block;
+}
+
+/* Screen Size */
 #explore{
   min-height: 65px; 
   min-width: 185px;

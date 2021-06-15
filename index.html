@@ -19,48 +19,54 @@
     <!--NAV BAR-->
     <nav id="navbar">
         <ul id="navs">
-            <li class="hide delay1 tab is-active" id="fast"><a data-switcher data-tab='1' href="#">HOME</a></li>
-            <li class="hide delay2 tab" id="fast"><a data-switcher data-tab='2' href="#">BIO</a></li>
-            <li class="hide delay3 tab" id="fast"><a data-switcher data-tab='3' href="#">PROJECTS</a></li>
-            <li class="hide delay4 tab" id="fast"><a data-switcher data-tab='4' href="#">CONTACT</a></li>
-            <li class="hide delay5 tab" id="fast"><a data-switcher data-tab='5' href="#">SERVICES</a></li>
+            <li class="hide delay1 tab active" id="fast"><a data-switcher data-tab='1'>HOME</a></li>
+            <li class="hide delay2 tab" id="fast"><a data-switcher data-tab='2'>BIO</a></li>
+            <li class="hide delay3 tab" id="fast"><a data-switcher data-tab='3'>PROJECTS</a></li>
+            <li class="hide delay4 tab" id="fast"><a data-switcher data-tab='4'>CONTACT</a></li>
+            <li class="hide delay5 tab" id="fast"><a data-switcher data-tab='5'>SERVICES</a></li>
         </ul>
     </nav>
 
-    <!--VIDEO BACKGROUND-->
-    <div class="overlay"></div>
-    <video id="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="./assets/Images_Videos/Cotton_Candy_Nebula_4K_Motion_Background (1).mp4" type="video/mp4">
-    </video>
+    <div class="page active" data-page="1">
+        <!--VIDEO BACKGROUND-->
+        <div class="overlay"></div>
+        <video id="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./assets/Images_Videos/Cotton_Candy_Nebula_4K_Motion_Background (1).mp4" type="video/mp4">
+        </video>
 
-    <!--HEADER-->
-    <header id="centerAll">
-        <section class="container-fluid h-100 d-flex justify-content-center home">
-            <div class="d-flex h-100 text-center align-items-center main">
-                <div class="w-100">
-                    <img id="logo" src="./assets/Images_Videos/logo.png"></img>
-                    <button type="button" class="btn" id="explore"><span id="animate"
-                            data-text="Explore...">Explore</span></button>
+        <!--HEADER-->
+        <header id="centerAll">
+            <section class="container-fluid h-100 d-flex justify-content-center home">
+                <div class="d-flex h-100 text-center align-items-center main">
+                    <div class="w-100">
+                        <img id="logo" src="./assets/Images_Videos/logo.png"></img>
+                        <button type="button" class="btn" id="explore"><span id="animate"
+                                data-text="Explore...">Explore</span></button>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </header>
+            </section>
+        </header>
+    </div>
 
     <!--PAGES-->
     <main>
         <section class="pages">
-            <div class="page" data-page="1"></div>
-            <h2>BIO</h2>
-            <p>bio info</p>
-            <div class="page" data-page="2"></div>
-            <h2>PROJECTS</h2>
-            <p>cards</p>
-            <div class="page" data-page="3"></div>
-            <h2>CONTACT</h2>
-            <p>contact info</p>
-            <div class="page" data-page="4"></div>
-            <h2>SERVICES</h2>
-            <p>Links to other pages</p>
+            <div class="page" data-page="2">
+                <h2>BIO</h2>
+                <p>bio info</p>
+            </div>
+            <div class="page" data-page="3">
+                <h2>PROJECTS</h2>
+                <p>cards</p>
+            </div>
+            <div class="page" data-page="4">
+                <h2>CONTACT</h2>
+                <p>contact info</p>
+            </div>
+            <div class="page" data-page="5">
+                <h2>SERVICES</h2>
+                <p>Links to other pages</p>
+            </div>
         </section>
     </main>
 
