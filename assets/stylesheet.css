@@ -166,7 +166,7 @@
 /* PAGES and Transitions */
 
 /* Select NAV on Page */
-body nav ul li.active a[data-switcher] {
+body nav ul li.active {
   background-color: var(--tertiary);
   border-width: 5px;
   border-color: var(--floop);
@@ -188,7 +188,7 @@ main section.pages div.page.active{
 #explore{
   min-height: 65px; 
   min-width: 185px;
- }
+}
 
 @media screen and (max-width:1024px){
   #navbar{
@@ -206,5 +206,4 @@ main section.pages div.page.active{
     left: 0%;
     right: 50%
   }
-  #
 }

@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="../Swashbuckler/assets/fontawesome/css/all.css" rel="stylesheet">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <title>Miernicki</title>
 </head>
 
@@ -21,15 +22,15 @@
     <!--NAV BAR-->
     <nav id="navbar">
         <ul id="navs">
-            <li class="hide delay1 tab active" id="fast"><a data-switcher data-tab='1'>HOME</a></li>
-            <li class="hide delay2 tab" id="fast"><a data-switcher data-tab='2'>BIO</a></li>
-            <li class="hide delay3 tab" id="fast"><a data-switcher data-tab='3'>PROJECTS</a></li>
-            <li class="hide delay4 tab" id="fast"><a data-switcher data-tab='4'>CONTACT</a></li>
-            <li class="hide delay5 tab" id="fast"><a data-switcher data-tab='5'>SERVICES</a></li>
+            <li class="hide delay1 tab active" id="fast"><a href="../Swashbuckler/index.html">HOME</a></li>
+            <li class="hide delay2 tab" id="fast"><a href="../Swashbuckler/bio.html">BIO</a></li>
+            <li class="hide delay3 tab" id="fast"><a href="../Swashbuckler/projects.html">PROJECTS</a></li>
+            <li class="hide delay4 tab" id="fast"><a href="../Swashbuckler/contact.html">CONTACT</a></li>
+            <li class="hide delay5 tab" id="fast"><a href="../Swashbuckler/services.html">SERVICES</a></li>
         </ul>
     </nav>
 
-    <div class="page active" data-page="1">
+    <main class="page">
         <!--VIDEO BACKGROUND-->
         <div class="overlay"></div>
         <video id="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -48,98 +49,6 @@
                 </div>
             </section>
         </header>
-    </div>
-
-    <!--PAGES-->
-    <main>
-        <section class="pages">
-            <!--BIO-->
-            <div class="page" data-page="2">
-                <h2 id="bioHead">BIO</h2>
-                <p id="bioInfo">bio info</p>
-            </div>
-
-            <!--PROJECTS-->
-            <div class="page" data-page="3">
-                <h2>PROJECTS</h2>
-                <section id="deck">
-                    <article class="card">
-                        <a href="https://miernickielijah.github.io/Skulduggery/">
-                            <h3>Skulduggery</h3>
-                            <img id="skulduggery" src="" alt="">
-                        </a>
-                        <figcaption>This is a random character generator for 5th edition dungeons and dragons. (HTML,
-                            APIs, CSS, vanilla
-                            JS, jQuery, Bulma framework) Utilizing Agile and Kanban methodologies, our group was able to
-                            finish this project
-                            in under 2 weeks. <a href="https://github.com/MiernickiElijah/Skulduggery">REPO</a>
-                        </figcaption>
-                    </article>
-
-                    <article class="card">
-                        <a href="https://miernickielijah.github.io/Druid/">
-                            <h3>Druid</h3>
-                            <img id="druid" src="" alt="">
-                        </a>
-                        <figcaption>This is a live weather dashboard with current and 5 day forecast based on US city.
-                            (HTML, CSS, HTML,
-                            jQuery, bootstrap, APIs) <a href="https://github.com/MiernickiElijah/Druid">REPO</a>
-                        </figcaption>
-                    </article>
-
-                    <article class="card">
-                        <a href="https://miernickielijah.github.io/Arcane/">
-                            <h3>Arcane</h3>
-                            <img id="Arcane" src="" alt="">
-                        </a>
-                        <figcaption>This is a README.md generator using node.js. Allowing a user to create an entire
-                            professional README file via command line.
-                            (Node.js, JS, jQuery, HTML, markdown) <a
-                                href="https://github.com/MiernickiElijah/Arcane">REPO</a>
-                        </figcaption>
-                    </article>
-
-                    <article class="card">
-                        <a href="https://miernickielijah.github.io/barbarian/">
-                            <h3>Barbarian</h3>
-                            <img id="barbarian" src="" alt="">
-                        </a>
-                        <figcaption>This is a day scheduler that allows users to save written notes via time to their
-                            local computer and
-                            track the passing of time.(HTML, CSS, JS, bootstrap, Moment/luxon)
-                            <a href="https://github.com/MiernickiElijah/barbarian">REPO</a>
-                        </figcaption>
-                    </article>
-                </section>
-            </div>
-
-            <!--CONTACT-->
-            <div class="page" data-page="4">
-                <h2>CONTACT</h2>
-                <section>
-                    <h4 class="sectionheads">Contact Me</h4>
-                    <ul id="contactlist">
-                        <i class="contact fas fa-inbox"><a
-                                href="mailto:miernickielijah@gmail.com"><strong>Miernickielijah@gmail.com</strong></a></i>
-                        <i class="contact fab fa-github"><a
-                                href="https://github.com/MiernickiElijah"><strong>github.com/MiernickiElijah</strong></a></i>
-                        <i class="contact fab fa-linkedin"><a
-                                href="https://www.linkedin.com/in/elijahmiernicki/"><strong>linkedin.com/in/miernickielijah</strong></a></i>
-                        <i class="contact fas fa-phone-square"><a href="tel:7634129985"><strong>Tel:
-                                    763-412-9985</strong></a></i>
-                        <i class="fas fa-file-pdf"><a href="../Bard/assets/Elijah Miernicki_Resume.pdf">Download my
-                                Resume</a></i>
-                    </ul>
-                </section>
-            </div>
-
-            <!--OTHER BUSINESS-->
-            <div class="page" data-page="5">
-                <h2>SERVICES</h2>
-                <p>COMING SOON!!!</p>
-            </div>
-
-        </section>
     </main>
 
     <!--JS links-->
