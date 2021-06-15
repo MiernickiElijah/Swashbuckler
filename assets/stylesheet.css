@@ -41,7 +41,7 @@
   padding: 5px;
   margin: 5px;
   overflow: hidden;
-  width: 8%;
+  width: 8rem;
   animation: type 3s steps(60, end); 
 }
 
@@ -63,7 +63,7 @@
   padding: 5px;
   margin: 5px;
   overflow: hidden;
-  width: 8%;
+  width: 8rem;
   animation: type 3s steps(60, end); 
 }
 
