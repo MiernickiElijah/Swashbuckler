@@ -89,7 +89,6 @@
   from { width: 0; } 
 } 
 
-
 .delay1{
   transition-delay: .3s;
 }
@@ -180,8 +179,6 @@
   transform: scale(1.05);
   cursor: pointer;
 }
-
-/* PAGES and Transitions */
 
 /* Select NAV on Page */
 body nav ul li.active {

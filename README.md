@@ -15,3 +15,5 @@ https://www.youtube.com/watch?v=ex7jGbyFgpA
 https://www.youtube.com/watch?v=-eVgT9pLHhI
 https://stackoverflow.com/questions/33486228/how-to-fade-in-reveal-one-letter-at-a-time
 https://stackoverflow.com/questions/30520309/one-button-calls-two-different-functions-on-different-clicks
+https://www.youtube.com/watch?v=eVwH3VL1EsA&t=180s
+https://animate.style/
