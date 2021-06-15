@@ -34,6 +34,15 @@
   font-size: 20px;
   padding: 5px;
   margin: 5px;
+  transition-property: color flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  width: 8%;
+  animation: type 3s steps(60, end); 
 }
 
 .transformed{
@@ -41,6 +50,7 @@
   background-color: var(--bloop);
   transition-delay: 250ms;
   border: var(--secondary);
+  font-family:'Rock Salt', cursive;
   border-width: 5px;
   border-radius: 8px;
   justify-content: center;
@@ -48,26 +58,34 @@
   position: sticky;
   transition-property: color flex;
   transition-timing-function: ease-in-out;
-  transition-duration: 3s;
+  transition-duration: 1s;
   display: flex;
   padding: 5px;
   margin: 5px;
+  overflow: hidden;
+  width: 8%;
+  animation: type 3s steps(60, end); 
 }
 
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+
 .delay1{
-  transition-delay: .5s;
+  transition-delay: .3s;
 }
 .delay2{
-  transition-delay: .8s;
+  transition-delay: .5s;
 }
 .delay3{
-  transition-delay: 1.1s;
+  transition-delay: .8s;
 }
 .delay4{
-  transition-delay: 1.4s;
+  transition-delay: 1.1s;
 }
 .delay5{
-  transition-delay: 1.7s;
+  transition-delay: 1.4s;
 }
 
 /* NAV */
