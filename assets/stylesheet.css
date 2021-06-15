@@ -22,6 +22,11 @@
   z-index: -1;
   }
 
+.pics:hover{
+transform: scale(1.15);
+transition-duration: 2s;
+}
+
 /* hide the nav links until clicked */
 .hide{
   visibility: hidden;
