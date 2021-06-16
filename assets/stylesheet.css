@@ -98,10 +98,11 @@ padding: 5px;
   background-color: var(--secondary);
 }
 
-ul.nav.nav-pills.nav-fill{
+#contactlist{
 font-size: 20px;
 text-decoration: none;
 color: var(--maincolor);
+background-color: none;
 }
 
 /* hide the nav links until clicked */
