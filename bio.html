@@ -19,7 +19,7 @@
     <title>PROJECTS</title>
 </head>
 
-<body>
+<body background="../Swashbuckler/assets/Images_Videos/bioback.jpg">
     <!--NAV BAR-->
     <nav id="navbar">
         <ul id="navs">
@@ -31,12 +31,18 @@
         </ul>
     </nav>
 
+    <!--VIDEO BACKGROUND-->
+    <div class="overlay"></div>
+    <video id="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="../Swashbuckler/assets/Images_Videos/biomovie.mp4" type="video/mp4">
+    </video>
+
     <main class="animate__animated animate__fadeInLeft container col-xxl-8 px-4 py-5">
         <!--Biography section with picture-->
         <h1 class="header display-5 fw-bold lh-1 mb-3">Elijah M.J.O. Miernicki</h1>
         <section class="aboutme row flex-lg-row-reverse align-items-center g-5 py-5">
             <article class="col-lg-6" id="bio">
-                <h1 id="header">About Me</h1>
+                <h1 id="aboutMeTitle">About Me</h1>
                 <p class="lead">
                     Business Intelligence Professional and Full Stack Developer with over 11 years of experience in
                     customer service

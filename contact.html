@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rock+Salt&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -31,45 +34,73 @@
         </ul>
     </nav>
 
+    <!--VIDEO BACKGROUND-->
+    <div class="overlay"></div>
+    <video id="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="../Swashbuckler/assets/Images_Videos/biomovie.mp4" type="video/mp4">
+    </video>
+
     <!--PAGES-->
     <main class="animate__animated animate__fadeInLeft">
         <!--CONTACT-->
         <div class="page" data-page="4">
             <section>
-                <h1 class="sectionheads">Contact Me</h1>
-
+                <h1 class="sectionheads">"Go for it! Connect with me about work or just ask some questions!"</h1>
                 <div class="container my-5">
                     <div class="row">
-                        <div class="col-md-6 mx-auto">
+                        <div class="col-md-6 mx-auto justify-content-center">
                             <div class="form-label">
                                 <input type="email" id="email" class="form-control" required>
                                 <label class="form-control-placeholder" for="email">email</label>
                             </div>
-
                             <div class="form-label">
                                 <label for="message" class="form-control-placeholder">message</label>
                                 <textarea class="form-control" rows="3" required></textarea>
                             </div>
+                            <!--button for send and modal-->
+                            <button type="button" class="btn btn-lg" id="emailBtn" data-bs-toggle="modal"
+                                data-bs-target="myModal">Send IT!</button>
                         </div>
                     </div>
                 </div>
+        </div>
 
-
-                <ul id="contactlist">
-                    <a href="mailto:miernickielijah@gmail.com"><i
-                            class="contact fas fa-inbox"><strong>Miernickielijah@gmail.com</strong></a></i>
-                    <a href="https://github.com/MiernickiElijah" target="_blank"><i
-                            class="contact fab fa-github"></a></i>
-                    <a href="https://www.linkedin.com/in/elijahmiernicki/" target="_blank"><i
-                            class="contact fab fa-linkedin"></a></i>
-                    <a href="tel:7634129985"><i
-                            class="contact fas fa-phone-square"><strong>763-412-9985</strong></a></i>
-                    <a href="../Swashbuckler/assets/Elijah Miernicki_Resume.pdf" target="_blank"><i
-                            class="fas fa-file-pdf">Resume</a></i>
-                </ul>
-            </section>
+        <!--CONTACT info-->
+        <ul class="list-group-flush" id="contactlist">
+            <a class="list-group-item" href="mailto:miernickielijah@gmail.com"><i
+                    class="contact fas fa-inbox"><strong>Miernickielijah@gmail.com</strong></a></i>
+            <a class="list-group-item" href="https://github.com/MiernickiElijah" target="_blank"><i
+                    class="contact fab fa-github"><strong>github.com/MiernickiElijah</strong></a></i>
+            <a class="list-group-item" href="https://www.linkedin.com/in/miernickielijah/" target="_blank"><i
+                    class="contact fab fa-linkedin"><strong>linkedIn.com/in/miernickielijah</strong></a></i>
+            <a class="list-group-item" href="tel:7634129985"><i
+                    class="contact fas fa-phone-square"><strong>763-412-9985</strong></a></i>
+            <a class="list-group-item" href="../Swashbuckler/assets/Elijah Miernicki_Resume.pdf" target="_blank"><i
+                    class="fas fa-file-pdf">Resume</a></i>
+        </ul>
+        </section>
         </div>
     </main>
+
+    <!--Modal pop up on send-->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="emailModalLabel">You Rock! :)</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="myInput">
+                    <iframe src="https://giphy.com/embed/FX3OLJAUhOZNK" frameBorder="0" class="giphy-embed"></iframe>
+                    <p><a href="https://giphy.com/gifs/thumbs-up-maybe-joaquin-phoenix-FX3OLJAUhOZNK">via
+                            GIPHY</a></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 

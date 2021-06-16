@@ -28,6 +28,32 @@ transform: scale(1.15);
 transition-duration: 2s;
 }
 
+/*BIO*/
+.header.display-5.fw-bold.lh-1.mb-3{
+background-color: var(--secondary);
+color: var(--tertiary);
+font-family: 'poppins';
+}
+
+#aboutMeTitle{
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  font-family: 'poppins';
+}
+
+p.lead{
+  color: var(--tertiary);
+  font-family: 'poppins';
+}
+
+/*PROJECT*/
+
+.display-5.fw-bold.lh-1.mb-3{
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  font-family: 'poppins';
+}
+
 /*CONTACT*/
 .form-label {
   position: relative;
@@ -49,6 +75,35 @@ transition-duration: 2s;
   opacity: 1;
 }
 
+#emailBtn{
+font-family:'Rock Salt', cursive;
+font-weight: bolder;
+border: solid;
+border-color: var(--maincolor);
+font-size: 20px;
+margin: 5px;
+transition-property: color flex;
+transition-timing-function: ease-in-out;
+transition-duration: 1s;
+display: flex;
+padding: 5px;
+margin: 5px;
+overflow: hidden;
+width: 8rem;
+animation: type 3s steps(60, end); 
+padding: 5px;
+}
+
+#emailBtn:hover{
+  transform: scale(1.05);
+  background-color: var(--secondary);
+}
+
+ul.nav.nav-pills.nav-fill{
+font-size: 20px;
+text-decoration: none;
+color: var(--maincolor);
+}
 
 /* hide the nav links until clicked */
 .hide{
