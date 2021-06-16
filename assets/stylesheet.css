@@ -105,6 +105,15 @@ color: var(--maincolor);
 background-color: none;
 }
 
+/*Services*/
+#gandalf{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
 /* hide the nav links until clicked */
 .hide{
   visibility: hidden;
