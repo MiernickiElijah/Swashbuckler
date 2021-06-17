@@ -10,6 +10,10 @@
   --floop: #9e5aa4;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /*Background Video*/
 #vid{
   object-fit: cover;
@@ -49,8 +53,16 @@ p.lead{
 /*PROJECT*/
 .display-5.fw-bold.lh-1.mb-3{
   background-color: var(--secondary);
+}
+
+.projectHead{
+  text-decoration: none;
+  font-family: "poppins";
   color: var(--tertiary);
-  font-family: 'poppins';
+}
+
+.projectHead:hover{
+  color: var(--floop);
 }
 
 /*CONTACT*/
@@ -132,6 +144,13 @@ font-size: 20px;
 text-decoration: none;
 color: var(--maincolor);
 background-color: none;
+}
+
+#footer {
+font-size: 16px;
+font-weight: bolder;
+text-align: center;
+scroll-behavior: smooth;
 }
 
 /*Services*/
