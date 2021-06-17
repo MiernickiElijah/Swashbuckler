@@ -26,3 +26,9 @@ const clicker = (function () {
 })();
 
 $('#explore').click(clicker);
+
+//fade in titles//
+$("#banner").fadeTo(3000, 1);
+$(".projectHead").fadeTo(2000, 1);
+$("#contactHead").fadeTo(3000, 1);
+$("#gandalf").fadeTo(4000, 1);

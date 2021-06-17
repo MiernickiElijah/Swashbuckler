@@ -33,14 +33,18 @@ transition-duration: 2s;
 }
 
 /*BIO*/
-.header.display-5.fw-bold.lh-1.mb-3{
-background-color: var(--secondary);
-color: var(--tertiary);
-font-family: 'poppins';
+#banner{
+  background: url(../assets/Images_Videos/purple2.png);
+  background-repeat: no-repeat;
+  background-size:60% 100%;
+  padding: 20px 15px;
+  color: var(--tertiary);
+  font-family: 'rock salt';
+  opacity: 0;
 }
 
 #aboutMeTitle{
-  background-color: var(--secondary);
+  background: linear-gradient(to right, var(--secondary), transparent);
   color: var(--tertiary);
   font-family: 'poppins';
 }
@@ -52,13 +56,14 @@ p.lead{
 
 /*PROJECT*/
 .display-5.fw-bold.lh-1.mb-3{
-  background-color: var(--secondary);
+  background: linear-gradient(to right, var(--secondary), transparent);
 }
 
 .projectHead{
   text-decoration: none;
   font-family: "poppins";
   color: var(--tertiary);
+  opacity: 0;
 }
 
 .projectHead:hover{
@@ -88,10 +93,16 @@ p.lead{
 
 #contactHead{
   font-family: 'rock salt';
+  color: var(--tertiary);
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+  background: url(../assets/Images_Videos/purple-watercolor-brush-stroke-6.png);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+  opacity: 0;
 }
 
 .nav-item{
@@ -159,6 +170,7 @@ scroll-behavior: smooth;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+  opacity: 0;
 }
 
 

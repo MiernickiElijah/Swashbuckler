@@ -32,6 +32,7 @@ https://stackoverflow.com/questions/33486228/how-to-fade-in-reveal-one-letter-at
 https://stackoverflow.com/questions/30520309/one-button-calls-two-different-functions-on-different-clicks  
 https://www.youtube.com/watch?v=eVwH3VL1EsA&t=180s  
 https://animate.style/  
+https://www.onlygfx.com/8-brush-stroke-banners-vector-svg-png-transparent-vol-2/  
 --------------
 ## Questions  
 Connect on [github](https://github.com/MiernickiElijah) or email me at miernickielijah@gmail.com with any questions or comments. 
